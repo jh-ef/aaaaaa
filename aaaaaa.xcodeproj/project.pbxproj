@@ -13,7 +13,39 @@
 		ABCFC77624F4D9A700F86A89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC76124F4D9A500F86A89 /* ContentView.swift */; };
 		ABCFC77724F4D9A700F86A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCFC76224F4D9A700F86A89 /* Assets.xcassets */; };
 		ABCFC77824F4D9A700F86A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCFC76224F4D9A700F86A89 /* Assets.xcassets */; };
+		ABCFC78824F4DC6C00F86A89 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCFC78724F4DC6C00F86A89 /* WidgetKit.framework */; };
+		ABCFC78A24F4DC6C00F86A89 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCFC78924F4DC6C00F86A89 /* SwiftUI.framework */; };
+		ABCFC78D24F4DC6C00F86A89 /* fsdfsafas.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC78C24F4DC6C00F86A89 /* fsdfsafas.swift */; };
+		ABCFC79024F4DC7000F86A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCFC78F24F4DC7000F86A89 /* Assets.xcassets */; };
+		ABCFC79224F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */; };
+		ABCFC79324F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */; };
+		ABCFC79624F4DC7000F86A89 /* fsdfsafasExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ABCFC79B24F4DC8B00F86A89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC76124F4D9A500F86A89 /* ContentView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABCFC79424F4DC7000F86A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABCFC75B24F4D9A400F86A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABCFC78424F4DC6C00F86A89;
+			remoteInfo = fsdfsafasExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABCFC79A24F4DC7000F86A89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ABCFC79624F4DC7000F86A89 /* fsdfsafasExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ABCFC76024F4D9A500F86A89 /* aaaaaaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aaaaaaApp.swift; sourceTree = "<group>"; };
@@ -24,6 +56,13 @@
 		ABCFC76F24F4D9A700F86A89 /* aaaaaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aaaaaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCFC77124F4D9A700F86A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABCFC77224F4D9A700F86A89 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = fsdfsafasExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCFC78724F4DC6C00F86A89 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		ABCFC78924F4DC6C00F86A89 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		ABCFC78C24F4DC6C00F86A89 /* fsdfsafas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fsdfsafas.swift; sourceTree = "<group>"; };
+		ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = fsdfsafas.intentdefinition; sourceTree = "<group>"; };
+		ABCFC78F24F4DC7000F86A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABCFC79124F4DC7000F86A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +80,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABCFC78224F4DC6C00F86A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCFC78A24F4DC6C00F86A89 /* SwiftUI.framework in Frameworks */,
+				ABCFC78824F4DC6C00F86A89 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +98,8 @@
 				ABCFC75F24F4D9A500F86A89 /* Shared */,
 				ABCFC76924F4D9A700F86A89 /* iOS */,
 				ABCFC77024F4D9A700F86A89 /* macOS */,
+				ABCFC78B24F4DC6C00F86A89 /* fsdfsafas */,
+				ABCFC78624F4DC6C00F86A89 /* Frameworks */,
 				ABCFC76824F4D9A700F86A89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +119,7 @@
 			children = (
 				ABCFC76724F4D9A700F86A89 /* aaaaaa.app */,
 				ABCFC76F24F4D9A700F86A89 /* aaaaaa.app */,
+				ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +141,26 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		ABCFC78624F4DC6C00F86A89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFC78724F4DC6C00F86A89 /* WidgetKit.framework */,
+				ABCFC78924F4DC6C00F86A89 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABCFC78B24F4DC6C00F86A89 /* fsdfsafas */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFC78C24F4DC6C00F86A89 /* fsdfsafas.swift */,
+				ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */,
+				ABCFC78F24F4DC7000F86A89 /* Assets.xcassets */,
+				ABCFC79124F4DC7000F86A89 /* Info.plist */,
+			);
+			path = fsdfsafas;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +171,12 @@
 				ABCFC76324F4D9A700F86A89 /* Sources */,
 				ABCFC76424F4D9A700F86A89 /* Frameworks */,
 				ABCFC76524F4D9A700F86A89 /* Resources */,
+				ABCFC79A24F4DC7000F86A89 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ABCFC79524F4DC7000F86A89 /* PBXTargetDependency */,
 			);
 			name = "aaaaaa (iOS)";
 			productName = "aaaaaa (iOS)";
@@ -127,6 +200,23 @@
 			productReference = ABCFC76F24F4D9A700F86A89 /* aaaaaa.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ABCFC78424F4DC6C00F86A89 /* fsdfsafasExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABCFC79724F4DC7000F86A89 /* Build configuration list for PBXNativeTarget "fsdfsafasExtension" */;
+			buildPhases = (
+				ABCFC78124F4DC6C00F86A89 /* Sources */,
+				ABCFC78224F4DC6C00F86A89 /* Frameworks */,
+				ABCFC78324F4DC6C00F86A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fsdfsafasExtension;
+			productName = fsdfsafasExtension;
+			productReference = ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +230,9 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					ABCFC76E24F4D9A700F86A89 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					ABCFC78424F4DC6C00F86A89 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -159,6 +252,7 @@
 			targets = (
 				ABCFC76624F4D9A700F86A89 /* aaaaaa (iOS) */,
 				ABCFC76E24F4D9A700F86A89 /* aaaaaa (macOS) */,
+				ABCFC78424F4DC6C00F86A89 /* fsdfsafasExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +274,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABCFC78324F4DC6C00F86A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCFC79024F4DC7000F86A89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,6 +291,7 @@
 			files = (
 				ABCFC77524F4D9A700F86A89 /* ContentView.swift in Sources */,
 				ABCFC77324F4D9A700F86A89 /* aaaaaaApp.swift in Sources */,
+				ABCFC79324F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +304,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABCFC78124F4DC6C00F86A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCFC79224F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */,
+				ABCFC78D24F4DC6C00F86A89 /* fsdfsafas.swift in Sources */,
+				ABCFC79B24F4DC8B00F86A89 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABCFC79524F4DC7000F86A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABCFC78424F4DC6C00F86A89 /* fsdfsafasExtension */;
+			targetProxy = ABCFC79424F4DC7000F86A89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ABCFC77924F4D9A700F86A89 /* Debug */ = {
@@ -318,6 +439,7 @@
 		ABCFC77C24F4D9A700F86A89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +461,7 @@
 		ABCFC77D24F4D9A700F86A89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +525,51 @@
 			};
 			name = Release;
 		};
+		ABCFC79824F4DC7000F86A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fsdfsafas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aaaaaa.fsdfsafas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABCFC79924F4DC7000F86A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = fsdfsafas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aaaaaa.fsdfsafas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +596,15 @@
 			buildConfigurations = (
 				ABCFC77F24F4D9A700F86A89 /* Debug */,
 				ABCFC78024F4D9A700F86A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABCFC79724F4DC7000F86A89 /* Build configuration list for PBXNativeTarget "fsdfsafasExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCFC79824F4DC7000F86A89 /* Debug */,
+				ABCFC79924F4DC7000F86A89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
