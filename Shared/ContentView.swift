@@ -30,9 +30,14 @@ struct EventsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            ForEach(events) { event in
-                Text(event.title)
-            }
+			if !events.isEmpty {
+				ForEach(events) { event in
+					Text(event.title)
+				}
+			} else {
+				Text("No Events")
+					.font(.callout)
+			}
         }
         .padding()
     
