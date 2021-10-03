@@ -7,8 +7,11 @@
 
 import SwiftUI
 import EventKit
-import class UIKit.UIApplication
 import Combine
+
+#if os(iOS)
+import class UIKit.UIApplication
+#endif
 
 extension EKEvent: Identifiable {
     public var id: String {
@@ -55,21 +58,33 @@ struct MainAppContentView: View {
     @State private var authStatus = EKEventStore.authorizationStatus(for: .event)
     
     var body: some View {
-        switch authStatus {
-        case .authorized:
-            EventsView()
-        case .notDetermined:
-            Button("Authorize") {
-                EKEventStore().requestAccess(to: .event) { success, error in
-                    authStatus = EKEventStore.authorizationStatus(for: .event)
-                }
-            }
-        default:
-            HStack {
-                Text("Cannot auth. Go to")
-                Link("Settings", destination: URL(string: UIApplication.openSettingsURLString)!)
-            }
-        }
+		switch authStatus {
+		case .authorized:
+			EventsView()
+				.navigationTitle("Events")
+		case .notDetermined:
+			Button("Authorize") {
+				EKEventStore().requestAccess(to: .event) { success, error in
+					authStatus = EKEventStore.authorizationStatus(for: .event)
+				}
+			}
+		default:
+			HStack {
+				Text("Cannot auth. Go to")
+				OpenSettingsLink()
+			}
+		}		
     }
 }
 
+struct OpenSettingsLink: View {
+	var body: some View {
+		let url: URL
+		#if os(iOS)
+		url = URL(string: UIApplication.openSettingsURLString)!
+		#elseif os(macOS)
+		url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars")!
+		#endif
+		return Link("Settings", destination: url)
+	}
+}

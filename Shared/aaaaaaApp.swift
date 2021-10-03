@@ -11,7 +11,14 @@ import SwiftUI
 struct aaaaaaApp: App {
     var body: some Scene {
         WindowGroup {
-            MainAppContentView()
+#if os(iOS)
+			NavigationView {
+				MainAppContentView()
+			}
+#elseif os(macOS)
+			MainAppContentView()
+				.frame(maxWidth: .infinity, maxHeight: .infinity)
+#endif
         }
     }
 }
