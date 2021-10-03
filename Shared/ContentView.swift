@@ -19,6 +19,23 @@ extension EKEvent: Identifiable {
     }
 }
 
+extension Date {
+	func weekBoundaries() -> (Date, Date)? {
+		let cal = Calendar.autoupdatingCurrent
+		let components = cal.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
+		guard let startOfWeek = cal.date(from: components) else {
+			return nil
+		}
+
+		let endOfWeekOffset = cal.weekdaySymbols.count - 1
+		let endOfWeekComponents = DateComponents(day: endOfWeekOffset, hour: 23, minute: 59, second: 59)
+		guard let endOfWeek = cal.date(byAdding: endOfWeekComponents, to: startOfWeek) else {
+			return nil
+		}
+		return (startOfWeek, endOfWeek)
+	}
+}
+
 struct EventsView: View {
     @State private var events = [EKEvent]()
     private let store = EKEventStore()
@@ -26,7 +43,12 @@ struct EventsView: View {
     
     func refreshEvents() {
         let calendars = store.calendars(for: .event)
-        let predicate = store.predicateForEvents(withStart: Date().addingTimeInterval(-20000), end: Date().addingTimeInterval(20000), calendars: calendars)
+		let date = Date()
+		let fallbackInterval: TimeInterval = 3600 * 24 * 3.5
+		let (start, end) = date.weekBoundaries() ??
+			// As fallback to proper calendar calculations, use ~7 days around date
+			(date.addingTimeInterval(-fallbackInterval), date.addingTimeInterval(fallbackInterval))
+        let predicate = store.predicateForEvents(withStart: start, end: end, calendars: calendars)
         let events = store.events(matching: predicate)
         self.events = events
     }
