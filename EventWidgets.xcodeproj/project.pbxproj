@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		ABCFC79024F4DC7000F86A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCFC78F24F4DC7000F86A89 /* Assets.xcassets */; };
 		ABCFC79224F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */; };
 		ABCFC79324F4DC7000F86A89 /* fsdfsafas.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC78E24F4DC6C00F86A89 /* fsdfsafas.intentdefinition */; };
-		ABCFC79624F4DC7000F86A89 /* fsdfsafasExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ABCFC79624F4DC7000F86A89 /* fsdfsafasExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABCFC78524F4DC6C00F86A89 /* fsdfsafasExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ABCFC79B24F4DC8B00F86A89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFC76124F4D9A500F86A89 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -269,6 +269,7 @@
 /* Begin PBXTargetDependency section */
 		ABCFC79524F4DC7000F86A89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = ABCFC78424F4DC6C00F86A89 /* fsdfsafasExtension */;
 			targetProxy = ABCFC79424F4DC7000F86A89 /* PBXContainerItemProxy */;
 		};
@@ -402,6 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.EventWidgets;
 				PRODUCT_NAME = EventWidgets;
 				SDKROOT = iphoneos;
@@ -427,6 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.EventWidgets;
 				PRODUCT_NAME = EventWidgets;
 				SDKROOT = iphoneos;
@@ -445,8 +448,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4HEP2MUY8;
 				INFOPLIST_FILE = fsdfsafas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,8 +471,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4HEP2MUY8;
 				INFOPLIST_FILE = fsdfsafas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
