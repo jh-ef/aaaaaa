@@ -2,7 +2,6 @@
 //  fsdfsafas.swift
 //  fsdfsafas
 //
-//  Created by jonathan on Aug/25/20.
 //
 
 import WidgetKit
@@ -48,7 +47,7 @@ struct fsdfsafasEntryView : View {
         if EKEventStore.authorizationStatus(for: .event) != .authorized {
             Text("Open app to auth")
         } else {
-            EventsView()
+            EventsList()
         }
     }
 }

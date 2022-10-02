@@ -2,7 +2,6 @@
 //  EventWidgetsApp.swift
 //  Shared
 //
-//  Created by jonathan on Aug/25/20.
 //
 
 import SwiftUI
@@ -12,7 +11,7 @@ struct EventWidgetsApp: App {
     var body: some Scene {
         WindowGroup {
 #if os(iOS)
-			NavigationView {
+			NavigationStack {
 				MainAppContentView()
 			}
 #elseif os(macOS)
