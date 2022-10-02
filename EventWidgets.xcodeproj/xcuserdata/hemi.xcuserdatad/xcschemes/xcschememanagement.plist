@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>aaaaaa (macOS).xcscheme_^#shared#^_</key>
+		<key>EventWidgets (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -13,6 +13,24 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ABCFC76624F4D9A700F86A89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABCFC76E24F4D9A700F86A89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABCFC78424F4DC6C00F86A89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
