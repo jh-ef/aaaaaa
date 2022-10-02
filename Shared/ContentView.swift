@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by jonathan on Aug/25/20.
 //
 
 import SwiftUI
@@ -36,7 +35,7 @@ extension Date {
 	}
 }
 
-struct EventsView: View {
+struct EventsList: View {
     @State private var events = [EKEvent]()
     private let store = EKEventStore()
     private let eventsChangePublisher = NotificationCenter.default.publisher(for: .EKEventStoreChanged)
@@ -54,18 +53,20 @@ struct EventsView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-			if !events.isEmpty {
-				ForEach(events) { event in
-					Text(event.title)
-				}
-			} else {
-				Text("No Events")
-					.font(.callout)
+		List {
+		if !events.isEmpty {
+			ForEach(events) { event in
+				EventView(event: event)
 			}
-        }
+		} else {
+			Text("No Events")
+				.font(.callout)
+			}
+		}.listStyle(.inset)
         .padding()
-    
+		.refreshable {
+			refreshEvents()
+		}
         .onAppear() {
             refreshEvents()
         }
@@ -82,7 +83,7 @@ struct MainAppContentView: View {
     var body: some View {
 		switch authStatus {
 		case .authorized:
-			EventsView()
+			EventsList()
 				.navigationTitle("Events")
 		case .notDetermined:
 			Button("Authorize") {
