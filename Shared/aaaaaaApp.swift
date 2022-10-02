@@ -1,5 +1,5 @@
 //
-//  aaaaaaApp.swift
+//  EventWidgetsApp.swift
 //  Shared
 //
 //  Created by jonathan on Aug/25/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct aaaaaaApp: App {
+struct EventWidgetsApp: App {
     var body: some Scene {
         WindowGroup {
 #if os(iOS)
